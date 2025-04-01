@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>e-Ticket</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/PNG/Logo e-tricket.png" alt="Logo">
+    </header>
+    <main class="container">
+
+        <div class="graphics"></div>
+        <h1>Buy your <span>ticket</span></h1>
+        <form action="">
+            <label class="input-group">
+                Choose the type
+                <select name="tipo-ingresso" id="ticket-type">
+                    <option value="lower">Lower chair</option>
+                    <option value="hihger">Upper chair</option>
+                    <option value="track">Track</option>
+                </select>
+            </label>
+            <label class="input-group">Qty.
+                <input type="number" id="qty" placeholder="00" min="1" max="10">
+            </label>
+            <button onclick="buy()" type="button">Buy</button>
+        </form>
+        <img class="hachuras" src="./assets/SVG/Hachuras.svg" alt="">
+        <section>
+            <h2>Unavailable quantity</h2>
+
+            <ul class="list">
+                <li>Track<span id="qty-track">100</span></li>
+                <li>Upper chair<span id="qty-hihger">200</span></li>
+                <li>Lower chair<span id="qty-lower">400</span></li>
+                
+            </ul>
+            <img src="./assets/Ingresso.svg" alt="">
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
